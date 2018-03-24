@@ -1,4 +1,9 @@
 /* Style for Index Page */
+#wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;  
+}
 .body{
     background-image:url("../images/upfeathers.png");
     border-top: 1px solid #cccccc;
@@ -12,13 +17,12 @@ header{
     width: 300px;
     height: 50px;
     text-align: center;
-    margin-left: 185px; 
     display: inline-block;
 }
-h2{
+nav{
     color: #777777;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16pt;
+    font-size: 18pt;
     float: right;
     margin-right: 40px;
     bottom: 100px;
@@ -26,13 +30,20 @@ h2{
     margin-top: 30px
 }
 a{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
+    text-decoration: none;
+    margin-right: 20px;
+
 }
 .container1{
     background-color:#ffffff;
-    width: 960px;
-    height: 450px;
-    margin: auto;
+    max-width: 960px;
+    width: 55%;
+    height: auto;
+    float: left;
+    margin:5% 0% 5% 5%; 
+
 }
 h1{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -47,16 +58,34 @@ h1{
 img{
     border: 1px solid #cccccc;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-bottom: 2px;
     float: left;
     overflow: auto;
 }
 p{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #777777;
     margin-right: 40px;
     margin-left: 40px
+}
+.sidebar{
+    float:left;
+    overflow: auto;
+    background: white;
+    height: 250px;
+    width: auto;
+    margin: 5% 0% 5% 2%;
+}
+h2{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #4aaaa5;
+    /* font-size: 18pt; */
+    padding: 5px;
+    border-bottom: 2px solid #cccccc;
+    margin-left: 15px;
+    margin-right: 15px
 }
 footer{
     background-color: #666666;
@@ -72,9 +101,12 @@ footer{
 /* Style for Contact Page */
 .container2{
     background-color:#ffffff;
-    width: 960px;
-    height: 710px;
-    margin: auto;
+    max-width: 960px;
+    width: 55%;
+    height: 750px;
+    margin: 30px;
+    float: left;
+    margin:5% 0% 5% 5%; 
 }
 label{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -84,16 +116,18 @@ label{
     margin-right: 900px
 }
 input{
-    width: 850px;
+    width: 85%;
     height: 25px;
     margin-left: 50px;
+    margin-right: 50px;
 }
 .name{
     margin-bottom: 20px;
 }
 .email{
     margin-bottom: 20px;
-}.message{
+}
+.message{
     margin-bottom: 20px;
     height: 300px;
 }
@@ -103,70 +137,176 @@ button{
     background-color: #4aaaa5;
     color: #cccccc;
     margin-left: 50px;
+    margin-top: 10px;
     padding: 7px;
     width: 100px;
 }
 /* Style for Portfolio Page */
+#figureWrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;  
+}
 .container3{
     background-color:#ffffff;
-    width: 960px;
+    max-width: 960px;
+    width: 55%;
     height: 1100px;
-    margin: auto;
+    margin: 30px;
+    float: left;
+    margin:5% 0% 5% 5%; 
 }
 h3{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16pt;
     background-color: #4aaaa5;
     color: #ffffff;
-    padding:10px;
-    width: 282px;
+    padding:6px;
+    width: 240px;
     text-align: center;  
 }
 .box{
-    position:relative;
+    position:absolute;
     float:left
 }
 .box-1{
-    top: 0%; 
-    left: 10%;
+    top: 53%; 
+    left: 8%;
 }
 .box-2{
-   top: 174px;
-   right: 246px
+   top: 74%;
+   left: 10.95%
 } 
 .box-3{
-    bottom: 8%;
-    left: 10%
+    top: 53%;
+    left: 32%;
 }
 .box-4{
-    bottom: 165px;
-    left: 518px
+    top:74%;
+    left: 34.95%
  } 
 .box-5{
-    bottom: 3%;
-    right: 21%
+    bottom: -25%;
+    left: 8%
 }
 .box-6{
-    bottom: 115px;
-    left: 140px
+    bottom: -27%;
+    left: 10.95%
  }
 .box-7{
-    bottom: 26%;
-    left: 18.5%
+    bottom: -25%;
+    left: 32%
 }
 .box-8{
-    bottom: 365px;
-    left: 519px
+    bottom: -27%;
+    left: 34.95%
  }
  .box-9{
-    bottom: 21%;
-    right: 21%
+    bottom: -65%;
+    left: 8%
 }
 .box-10{
-    bottom: 315px;
-    left: 140px
+    bottom: -67%;
+    left: 10.95%
  }
 footer{
     clear:both;
     overflow:auto
+}
+
+/* Media Queries */
+
+/* Screen that is 980px or less */
+@media screen and (max-width:980px) {
+.body{
+    width: 100%;
+}
+.container1{
+    width:100%;
+}
+.sidebar{
+    width: 100%;
+}
+.container2{
+    width:100%;
+}
+.container3{
+    width:100%;
+}
+}
+
+/* Screen that is 768px or less */
+@media screen and (max-width:768px) {   
+.body{
+    width: 100%;
+}    
+.container1{
+    width: 100%;
+}
+.sidebar{
+    width: 100%;
+}
+.container2{
+    width:100%;
+}
+.container3{
+    width:100%;
+}
+}
+
+/* Screen that is 640px or less */
+@media screen and (max-width:640px) {
+.body{
+    width: 100%;
+}
+.container1{
+    width: 100%;
+}
+.sidebar{
+    width: 100%;
+}
+header{
+    width:100%;
+    max-width: 640px;
+    text-align: center
+}
+nav{
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    max-width: 640px;
+    margin: auto;
+    text-align: center;
+}
+.container2{
+    width:100%;
+    max-width: 640px;
+}
+.name{
+    width: 100%;
+    max-width: 640px;
+}
+.email{
+    width: 100%;
+    max-width: 640px;
+}
+.message{
+    width: 100%;
+    max-width: 640px;
+}
+.container3{
+    width:100%;
+    max-width: 640px;
+    height:auto;
+}
+.box{
+    position:static;
+    max-width: 640px;
+}
+h3{
+    position: relative;
+    max-width: 640px;
+    clear:both;
+    margin-left: 40px;
+}
 }
